@@ -35,6 +35,7 @@ The design process is divided into four main phases:
 - **Return Loss (S11):** Below -20 dB at 2 GHz, indicating excellent impedance matching.
 - **Insertion Loss (S21, S31):** Equal power division with insertion loss near -3 dB.
 - **Isolation (S23):** High isolation between output ports with values below -20 dB.
+- The results have been provided in the attached report
 
 ## Tools and Technologies Used
 - **Keysight ADS** for schematic and EM simulation.
