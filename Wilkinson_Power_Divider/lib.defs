@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE Project_lib Project_lib
+ASSIGN Project_lib libMode shared

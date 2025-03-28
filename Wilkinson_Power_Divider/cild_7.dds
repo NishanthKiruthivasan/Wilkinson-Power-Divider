@@ -1,0 +1,52 @@
+defun  _DDSobjectSaveRestore_()
+{
+decl goId, goId2, goId3, goId4, ptId, plyPtId, ddsId, dssId, ddWinId, ddoId, goId1, pageId, markerID, plotId, axisID, traceID, legendID, goId0;
+
+ddsId = get_dds();
+
+set(ddsId, "ddsFileVersion", 1.0);
+
+ddoId = get_new(ddsId, "Object");
+// DataDisplay Object:
+	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
+	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
+	set(ddoId, "FileModifiedDateAndTime", "2025-03-14T01:15:36Z");
+	set(ddoId, "FileCreatedDateAndTime", "2025-03-14T01:15:36Z");
+	dssId = get(ddoId, "DatasetServer");
+// Default Dataset
+	set(ddoId, "DefaultDataset", "Project");
+// Snap/Grid Defaults 
+	set(ddoId, "GridType", 0);
+	set(ddoId, "GridOn", FALSE);
+	set(ddoId, "DotGridColor", 102);
+	set(ddoId, "LineGridColor", 42);
+	set(ddoId, "SnapDistanceX", 0.125);
+	set(ddoId, "SnapDistanceY", 0.125);
+	set(ddoId, "SnapGridPerDisplayGridX", 2);
+	set(ddoId, "SnapGridPerDisplayGridY", 2);
+	set(ddoId, "SnapEnabled", TRUE);
+	set(ddoId, "SnapAutoSetXY", TRUE);
+	set(ddoId, "EnableExpressionUpdates", FALSE);
+pageId = get(ddoId, "CurrentPage");
+if (pageId == NULL) pageId = get_first(ddoId, "Page");
+if (pageId == NULL) pageId = get_new(ddoId, "Page");
+// Base Class Object:
+	set(pageId, "Name", "page 1");
+	set(pageId, "Uid", 2007746925);
+	set(pageId, "Invisible", FALSE);
+	set(ddoId, "UpdateAllExpressions", TRUE);
+	set(ddoId, "EnableExpressionUpdates", TRUE);
+
+ddWinId = get_new(ddsId, "Window", 194, 72, 1536, 864);
+	set(ddWinId, "Object", ddoId);
+	set(ddWinId, "CurrentPage", 2007746925);
+	set(ddWinId, "PageViewRect_2007746925", list(0, 6167, 11792, 0));
+	set(ddWinId, "Frame", list(194, 72, 1536, 864));
+	set(ddWinId, "Maximized", FALSE);
+	set(ddWinId, "ForegroundColor", 0);
+	set(ddWinId, "BackgroundColor", 8);
+	set(ddWinId, "WindowPageOrder", list("page 1"));
+
+}
+
+_DDSobjectSaveRestore_() ;
