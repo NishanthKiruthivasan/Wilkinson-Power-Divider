@@ -1,5 +1,4 @@
 # Wilkinson-Power-Divider
-# Wilkinson Power Divider Design
 
 ## Overview
 This project involves the design and simulation of a 2 GHz, 50Ω Wilkinson power divider using Keysight ADS. The objective is to develop a two-metal layer PCB layout with copper as the conductive material and FR4 as the dielectric substrate (εr = 4.6). The design utilizes a 0402 footprint for isolating resistors and follows a methodical approach that includes impedance line calculations, schematic simulations, and electromagnetic (EM) simulations.
